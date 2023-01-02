@@ -1,6 +1,6 @@
 # js
 cursoEBAC
-##Como acessar
+## Como acessar
 - Baixar 'formulario.zip'
 - Descompactar
 - Acessar com seu navegador 'formulario.html'
