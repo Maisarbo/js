@@ -20,7 +20,7 @@
                     <label for="nome">Nome</label>
 
                 </div>
-               <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome">
+               <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome" required>
 
             </div>
             <div>
@@ -28,7 +28,7 @@
                     <label for="email">E-mail</label>
 
                 </div>
-                <input type="email" placeholder="digite seu email" class="email" name="email">
+                <input type="email" placeholder="digite seu email" class="email obrigatorio" name="email"  required>
             </div>
             
             <div>
@@ -36,28 +36,28 @@
                     <label for="telefone">Telefone</label>
 
                 </div>
-                <input type="text" placeholder="digite seu telefone" class="numero" name="telefone">
+                <input type="text" placeholder="digite seu telefone" class="numero obrigatorio" name="telefone" required minlength="10" maxlength="11" >
             </div>
             <div>
                 <div>
                     <label for="cep">CEP</label>
 
                 </div>
-                <input type="text" placeholder="digite seu cep" class="numerico" name="cep">
+                <input type="text" placeholder="digite seu cep" class="numero obrigatorio" name="cep" required minlength="8" maxlength="8">
             </div>
             <div>
                 <div>
                     <label for="cidade">Cidade</label>
 
                 </div>
-                <input type="text" placeholder="digite seu cidade" class="obrigatorio" name="cidade">
+                <input type="text" placeholder="digite seu cidade" class="obrigatorio input" name="cidade" required>
             </div>
             <div>
                 <div>
                     <label for="estado">Estado</label>
                 </div>
                 <div class="col-75" >
-                    <select>
+                    <select required>
                         <option value="">Estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -99,7 +99,7 @@
           
             
            
-            <button type="submit">Enviar</button>
+            <button type="submit" id="botao">Enviar</button>
         </form>
 
         <div id="resultado">
